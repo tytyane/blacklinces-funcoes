@@ -8,8 +8,20 @@ Tente utilizar o método filter para criar um novo array contendo apenas os
 números que atendem a essa condição.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Titi
+ - Luiz
+ - Samantha
+ - Rafa
 */
+
+function getEvenNumbers(num){
+    let par = []
+    num.forEach(number => {
+        if(number % 2 == 0){
+            par.push(number)
+        }
+    })
+    return par
+}
+
+console.log(`${getEvenNumbers([2, 4, 7, 15, 8])}`)

@@ -7,8 +7,16 @@ Utilize o método sort para ordenar os caracteres. Utilize o método join para
 juntar os caracteres em uma nova string.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Titi
+ - Luiz
+ - Samantha
+ - Rafa
 */
+
+function alphabeticalOrder(word){
+    return word.split('').sort().join('')
+}
+
+console.log(alphabeticalOrder('abacate'))
+
+// Pesquisa: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/sort

@@ -7,8 +7,18 @@ Dica: Some todos os elementos do array e divida pela quantidade de elementos. Ut
 método reduce para somar os elementos do array.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Titi
+ - Luiz
+ - Samantha
+ - Rafa
 */
+
+function averageArray(num){
+    let soma = parseFloat(num.reduce((acululador, valorAtual) => acululador + valorAtual))
+    let media = soma / num.length
+    return media.toFixed(2)
+}
+
+console.log(averageArray([5, 2, 4]))
+
+// Pesquisa: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
