@@ -14,3 +14,18 @@ Programa desenvolvido por:
  - Rafa
 */
 
+function isPrime(num){
+    if(num <= 1){
+        return false
+    }
+    for(let i = 2; i <= Math.sqrt(num); i++){
+        if(num % i == 0){
+            return false
+        }
+    }
+    return true
+}
+
+console.log(isPrime(11))
+
+// Pesquisa: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Math/sqrt

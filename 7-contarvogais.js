@@ -17,11 +17,15 @@ Programa desenvolvido por:
 */
 
 function countVowels(word){
-    let vogais = ['a', 'e', 'i', 'o', 'u']
+    let dividirPalavra = word.split('')
+    let vogais = ['a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U']
     let numVogais = 0
-    word.forEach(letra => {
-        
-    })
-    
-
+    for(let i = 0; i <= word.length; i++){
+        if(vogais.includes(dividirPalavra[i])){
+            numVogais++
+        }
+    }
+    return numVogais
 }
+
+console.log(countVowels('Caqui'))

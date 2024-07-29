@@ -9,11 +9,22 @@ Dica: Utilize o método filter para encontrar os elementos comuns. Utilize o mé
 includes para verificar se um elemento está presente no outro array.
 
 Programa desenvolvido por:
- - Aluno 1
- - Aluno 2
- - Aluno 3
- - Aluno 4
+ - Titi
+ - Luiz
+ - Samantha
+ - Rafa
 */
+
+function intersection(array1, array2){
+    let comuns = array1.filter(function(i){
+        return array2.incudes(i)
+    })
+    return comuns
+}
+
+console.log(intersection([1, 2, 3, 4], [4, 5, 2, 8, 1]))
+
+// Pesquisa: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 
 /*
 2. Crie uma função chamada drawEvenNumberTriangle que aceite um número n, use a função
